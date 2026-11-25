@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.local-form').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('.form-status');if(!form.reportValidity()){status.textContent=window.FITD_T('form.error');return}status.textContent=window.FITD_T('form.success');form.reset()}));});
